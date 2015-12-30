@@ -7,9 +7,9 @@ $apicaller = new ApiCaller('APP001', '28e336ac6c9423d946ba02d19c6a2632','http://
 $todo_items = $apicaller->sendRequest(array(
 	'controller' => 'member',
 	'action' => 'getmemberchilds',
-	'username' => $_SESSION['username'],
-	'userpass' => $_SESSION['userpass'],
-	'member_id' => 1
+	'username' => 'aops',
+	'userpass' => 'password',
+	'member_id' => 4
 ));
-echo $todo_items;
+echo var_dump($todo_items);
 ?>
